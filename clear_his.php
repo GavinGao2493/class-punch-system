@@ -17,6 +17,6 @@
   else
   {
     echo "<script>alert('不合法调用')</script>";
-    header("Refresh:0;url=./check.html");
+    header("Refresh:0;url=./control.html");
   }
 ?>
