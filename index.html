@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<!-- 下边三行代码用于适配不同设备的访问，做出适配与手机的窗口 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content="telephone=no" />
+<head>
+<meta charset="utf-8">
+<title>班级打卡系统(测试)</title>
+</head>
+<body>
+<p>请在下面输入姓名和学号：</br>注意，姓名与学号必须对应，否则会报错。</br>打卡成功信息会以对话框形式弹出，请注意查看</p>
+<!-- 下面通过form表单提交的方式传递POST -->
+<form action="addinfo.php" method="post">
+	<div>
+		<label for="name">姓名：</label>
+		<input id="name" name="name">
+	</div>
+	<div>
+		<label for="number">学号：</label>
+		<input id="number" name="number">
+	</div>
+	<div>
+		<button type="submit">点击打卡</button>
+	</div>
+</form>
+<p>在使用过程中有任何问题，请联系作者或班主任解决</p>
+<p>版本更新：</br>1、现在IP地址重复检测已经正式开启</br>2、现在打卡信息转换为由对话框弹出</br>3、主页做了能与手机相适配的窗口</br>4、进行了对清除历史记录功能的安全性维护</br>5、修复了在特定条件下时间访问错误的bug</p>
+</body>
+</html>
